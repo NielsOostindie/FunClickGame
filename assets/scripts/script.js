@@ -54,7 +54,7 @@ function counterL(){
 }
 
 function winState(count, speler){
-if(count == 8){
+if(count == 30){
     document.getElementById("userWon").innerHTML = speler + " has won!";
     document.getElementById("winner").style.display = "block";
     document.body.removeEventListener("keyup",bodyKeyUp);

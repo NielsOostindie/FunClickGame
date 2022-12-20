@@ -38,6 +38,10 @@ html,body{
     transition: background-color 300ms ease-in;
 }
 
+.darkmode #winner{
+    color: white;
+}
+
 #user1{
     transition: all;
     text-align: center;
