@@ -1,0 +1,19 @@
+{
+  "name": "funclickgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NielsOostindie/FunClickGame.git"
+  },
+  "author": "Niels Oostindie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NielsOostindie/FunClickGame/issues"
+  },
+  "homepage": "https://github.com/NielsOostindie/FunClickGame#readme"
+}
