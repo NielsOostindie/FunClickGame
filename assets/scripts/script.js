@@ -55,7 +55,7 @@ function counterL() {
 let countA = 0;
 let countL = 0;
 function winState(count, speler) {
-  if (count == 50) {
+  if (count == 10) {
     document.getElementById("userWon").innerHTML = speler + " has won!";
     document.getElementById("winner").style.display = "block";
     document.getElementById("restart").style.display = "block";
