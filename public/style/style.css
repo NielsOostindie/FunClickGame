@@ -4,10 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: hydrophilia-liquid, sans-serif;
-/* 
-font-weight: 400;
-
-font-style: normal; */
 }
 html,body{
     touch-action: pinch-zoom;
@@ -38,7 +34,7 @@ span{
     font-size: 60px;
 }
 
-#flexBox{
+.flexBox{
     height: 100%;
     width: 100%;
     display: flex;
@@ -212,7 +208,7 @@ h1{
 }
 
 @media only screen 
-  and (min-device-width: 390px) 
+  and (min-device-width: 320px) 
   and (max-device-width: 844px) 
   and (-webkit-min-device-pixel-ratio: 3) 
   and (orientation: portrait)
@@ -221,11 +217,14 @@ h1{
         z-index: 100;
         display: none;
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
+        font-weight: 900;
         color: white;
-        margin: 60% 18%;
-        height: 50px;
-        width: 30%;
+        margin: 100% -15%;
+        height: 53px;
+        width: 60%;
+        background-color: yellow;
+        background: transparent;
     }
 
     #winner{
@@ -276,7 +275,7 @@ h1{
         text-align: center;
         line-height: 7;
         margin: 80% -1%;
-        height: 55%;
+        height: 60%;
         width: 110%;
     }
 
@@ -314,9 +313,10 @@ and (orientation: landscape) {
         text-align: center;
         font-size: 30px;
         color: white;
-        margin: 60% 18%;
+        margin: 110% 0%;
         height: 50px;
         width: 30%;
+        background-color: transparent;
     }
 
     .modeSwitch{
@@ -335,4 +335,51 @@ and (orientation: landscape) {
         width: 150px;
         height: 150px;
     }
+}
+
+#game2{
+    display: none;
+}
+
+.darkmode .ball{
+    border: 2px solid white;
+}
+
+#game2 .modeSwitch{
+    position: absolute;
+}
+
+.ball{
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: all 1.5s ease-in-out;
+}
+
+#redBall{
+    background-color: red;
+}
+
+#yellowBall{
+    background-color: yellow;
+}
+
+#greenBall{
+    background-color: green;
+}
+
+#blueBall{
+    background-color: blue;
+}
+
+#purpleBall{
+    background-color: purple;
+}
+
+#pinkBall{
+    background-color: pink;
 }

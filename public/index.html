@@ -6,12 +6,13 @@
     <meta name="viewport" content="user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Click Game</title>
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/baw1byn.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
 </head>
 <body>
     <div id="game1">
-        <div id="flexBox">
+        <div class="flexBox">
             <div onclick="myFunction()" class="modeSwitch"></div>
             <div id="countDownTimer">
                 <span id="countDownText"></span>
@@ -26,6 +27,17 @@
             <div id="outputL">0</div>
         </div>
     </div>
+    <div id="game2">
+        <div class="flexBox">
+            <div onclick="myFunction()" class="modeSwitch"></div>
+            <div onmousedown="redGone()" id="redBall" class="ball"></div>
+            <div onmousedown="blueGone()" id="blueBall" class="ball"></div>
+            <div onmousedown="yellowGone()" id="yellowBall" class="ball"></div>
+            <div onmousedown="greenGone()" id="greenBall" class="ball"></div>
+            <div onmousedown="purpleGone()" id="purpleBall" class="ball"></div>
+            <div onmousedown="pinkGone()" id="pinkBall" class="ball"></div>
+        </div>
+    </div>
     <div id="beginScreen">
         <div onclick="myFunction()" class="modeSwitch"></div>
         <div id="gamemodeSelector">
@@ -33,6 +45,6 @@
             <div onclick="gameMode2()" id="gameMode2">Gamemode 2</div>
         </div>
     </div>
-    <script src="../assets/scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
